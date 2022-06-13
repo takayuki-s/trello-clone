@@ -1,9 +1,10 @@
 import DragAndDropTest from "./components/DragAndDropTest";
+import { Header } from "./components/header/Header";
 
 function App() {
   return (
     <div>
-      <DragAndDropTest></DragAndDropTest>
+      <Header />
     </div>
   );
 }

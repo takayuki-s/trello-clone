@@ -1,9 +1,10 @@
 import React from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import "./DragAndDropTest.css";
 
 function DragAndDropTest() {
   return (
-    <div>
+    <div className="dragDropArea">
       <DragDropContext>
         <Droppable droppableId="droppable">
           {(provided) => (
@@ -11,6 +12,7 @@ function DragAndDropTest() {
               <Draggable draggableId="item0" index={0}>
                 {(provided) => (
                   <div
+                    className="item"
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     ref={provided.innerRef}

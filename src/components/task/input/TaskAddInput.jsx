@@ -5,6 +5,7 @@ export const TaskAddInput = ({inputText, setInputText, setTaskList, taskList}) =
     e.preventDefault()
     // カードを追加する
     setTaskList([...taskList, {
+      id: taskList.length,
       text: inputText
     }])
     setInputText("")

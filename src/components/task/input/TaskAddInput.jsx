@@ -17,7 +17,6 @@ export const TaskAddInput = ({inputText, setInputText, setTaskList, taskList}) =
 
   const handleChange = (e) => {
     setInputText(e.target.value)
-    console.log(inputText)
   }
   return (
     <div>
